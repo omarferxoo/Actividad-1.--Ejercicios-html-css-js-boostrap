@@ -7,16 +7,12 @@ function convertir() {
         resultado.value = "";
         return;
     }
-
     celsius = parseFloat(celsius);
-
     if (isNaN(celsius)) {
         alert("Ingresa un valor numérico válido.");
         resultado.value = "";
         return;
     }
-
     var fahrenheit = (celsius * 9 / 5) + 32;
-
     resultado.value = fahrenheit.toFixed(2) + " °F";
 }
